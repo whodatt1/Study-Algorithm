@@ -21,11 +21,17 @@ public class Main {
 		String input = sc.next();
 		sc.close();
 		
+		String tmp = "";
+		
 		for (int i = 0; i < input.length(); i++) {
-			System.out.print(input.charAt(i));
+			tmp += input.charAt(i);
+			
 			if (i % 10 == 9) {
-				System.out.println();
+				System.out.println(tmp);
+				tmp = "";
 			}
 		}
+		
+		System.out.println(tmp);
 	}
 };
