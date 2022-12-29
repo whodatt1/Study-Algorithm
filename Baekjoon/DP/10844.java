@@ -46,7 +46,7 @@ public class Main {
 			dp[1][i] = 1L;
 		}
 		
-		for (int i = 2; i <= T; i++) {
+		for (int i = 2; i <= N; i++) {
 			// 0으로 시작하는 수의 개수
 			dp[i][0] = dp[i-1][1];
 			for (int j = 1; j <= 9; j++) {
