@@ -53,6 +53,7 @@ public class Main {
     	
     	int N = Integer.parseInt(br.readLine());
     	
+		// N이 두개 이상 곱셈(인수) 로 나타낼 수 있을때 인수중 한개 이상은 루트N 보다 작거나 같다!
     	for (int i = 2; i * i <= N; i++) {
 			while (N % i == 0) {
 				sb.append(i).append("\n");
